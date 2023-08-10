@@ -1,6 +1,13 @@
-abstract class AppException implements Exception {
-  final String message;
-  final StackTrace? stackTrace;
+class AppException implements Exception {
+  late final String? message;
+  late final StackTrace stackTrace;
+  late final Exception? exception;
 
-  AppException(this.message, this.stackTrace);
+  AppException() : stackTrace = StackTrace.current;
+
+  factory AppException.unexpected(Exception e) {
+    return AppException()
+      ..message = 'Unexpected error: $e'
+      ..exception = e;
+  }
 }
