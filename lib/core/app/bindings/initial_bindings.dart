@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:sil_todo/core/app/bindings/remote_source_bindings.dart';
-import 'package:sil_todo/core/app/controller/auth_controller.dart';
+import 'package:sil_todo/core/app/controllers/auth_controller.dart';
+import 'package:sil_todo/core/app/controllers/todo_controller.dart';
+import 'package:sil_todo/core/app/controllers/user_controller.dart';
 
 import 'local_source_bindings.dart';
 
@@ -9,6 +11,8 @@ class InitialBindings extends Bindings {
   void dependencies() {
     LocalStorageBindings().dependencies();
     RemoteSourceBindings().dependencies();
-    Get.lazyPut(() => AuthController(), fenix: true);
+    Get.put(() => AuthController());
+    Get.lazyPut(() => UserController());
+    Get.lazyPut(() => TodoController());
   }
 }
