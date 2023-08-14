@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:sil_todo/core/app/bindings/initial_bindings.dart';
-import 'package:sil_todo/core/app/controllers/auth_controller.dart';
-import 'package:sil_todo/core/app/controllers/user_controller.dart';
+import 'package:sil_todo/app/bindings/initial_bindings.dart';
+import 'package:sil_todo/app/controllers/auth_controller.dart';
+import 'package:sil_todo/app/controllers/user_controller.dart';
 
 void main() async {
   InitialBindings().dependencies();
