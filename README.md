@@ -19,8 +19,8 @@ Assaignment is a Flutter project demonstrating a layered architecture with vario
 
 ## Installation
 
-1. **Clone the Repository**: `git clone https://github.com/yourusername/assaignment.git`
-2. **Navigate to the Project Directory**: `cd assaignment`
+1. **Clone the Repository**: `git clone [https://github.com/Lamentoss/assaignment-ledbim.git](https://github.com/Lamentoss/assaignment-ledbim.git)`
+2. **Navigate to the Project Directory**: `cd assaignment-ledbim`
 3. **Install Dependencies**: Run `flutter pub get` to fetch the required packages.
 4. **Run the Project**: Use `flutter run` to launch the application.
 
